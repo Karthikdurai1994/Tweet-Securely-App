@@ -16,13 +16,23 @@ Run npm i for the first time after cloning the repository. Run node app.js for a
 # API End-Points
 
 --> Default End-Point - localhost:3000
+
 --> Create or Sign Up Users - localhost:3000/user
+
 --> Logging in Users - localhost:3000/user/login
+
 --> Logging Out User from the device they are using currently - localhost:3000/user/logout
+
 --> Logging Out User from all devices they logged in - localhost:3000/user/logoutAll
+
 --> Create Tweet API - localhost:3000/createTweet
+
 --> Reading All Tweets - localhost:3000/fetchAllTweets
+
 --> Deleting Tweet - localhost:3000/deleteTweet/:id
+
 --> Admin API for performing operations on behalf of user - localhost:3000/adminOperation
+
 --> Admin Reading All Tweets of the User - localhost:3000/fetchAllTweetsOfUser
+
 --> Complete Admin's Request by Super-Admin - localhost:3000/completeAdminRequest
