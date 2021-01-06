@@ -36,3 +36,5 @@ Run npm i for the first time after cloning the repository. Run node app.js for a
 --> Admin Reading All Tweets of the User - localhost:3000/fetchAllTweetsOfUser
 
 --> Complete Admin's Request by Super-Admin - localhost:3000/completeAdminRequest
+
+--> Super Admin Viewing Logs - localhost:3000/viewLogs
