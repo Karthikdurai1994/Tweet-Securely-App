@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+//Log Creation
 const logger = require("./config/logger");
 const app = express();
 const bodyparser = require("body-parser");
@@ -218,7 +219,7 @@ app.post("/adminOperation", async (req, res) => {
 
     res.send(adminOperation);
   } catch (e) {
-    res.status(400).send(e);
+    res.status(500).send(e);
   }
 });
 
@@ -279,7 +280,6 @@ app.get("/completeAdminRequest", async (req, res) => {
 
 //View Logs
 app.post("/viewLogs", async (req, res) => {
-  const logType = req.body.logType;
   try {
     const logs = await log.find({});
     logs.map((data) => {

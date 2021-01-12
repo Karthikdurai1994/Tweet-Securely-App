@@ -7,7 +7,7 @@ const logSchema = new mongoose.Schema(
     message: { type: String },
     meta: { type: String },
   },
-  { collection: "log" }
+  { collection: "log" } //setting collection name or else plural of model name will be taken
 );
 
 const logs = mongoose.model("Log", logSchema);
